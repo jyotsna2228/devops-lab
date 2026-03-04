@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e3f2fd; /* sky blue background */
+            margin: 0;
+        }
+
+        header {
+            background: #f48fb1; /* pink header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            width: 60%;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #f06292; /* dark pink */
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #039be5; /* sky blue link */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0277bd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📖 Recipe Details</h1>
+</header>
+
+<div class="card">
+    <h2><%= recipe.name %></h2>
+    <p><%= recipe.description %></p>
+
+    <a href="/">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>
+
